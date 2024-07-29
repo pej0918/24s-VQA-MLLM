@@ -22,10 +22,14 @@ import openai
 from .utils.fancy_pbar import progress, info_column
 from .utils.data_utils import Qid2Data
 from configs.task_cfgs import Cfgs
-
-from transformers import InstructBlipProcessor, InstructBlipForConditionalGeneration
-from PIL import Image 
 from itertools import islice
+
+##InstructBLIP
+from transformers import InstructBlipProcessor, InstructBlipForConditionalGeneration
+import torch
+from PIL import Image
+import requests
+
 
 class Runner:
     def __init__(self, __C, evaluater):
@@ -36,8 +40,8 @@ class Runner:
         # instructBLIP loading 
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         print(f"Using device: {self.device}")
-        self.processor = InstructBlipProcessor.from_pretrained("Salesforce/instructblip-vicuna-7b")
-        self.model = InstructBlipForConditionalGeneration.from_pretrained("Salesforce/instructblip-vicuna-7b", load_in_4bit=False).to(self.device)
+        self.processor = InstructBlipProcessor.from_pretrained("Salesforce/instructblip-flan-t5-xl")
+        self.model = InstructBlipForConditionalGeneration.from_pretrained("Salesforce/instructblip-flan-t5-xl", load_in_4bit=False)
 
     def instructblip_infer(self, image_path, prompt_text, max_retries=3):
         retry_count = 0

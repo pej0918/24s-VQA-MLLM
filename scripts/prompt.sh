@@ -33,8 +33,8 @@ done
 
 TASK=${TASK:-ok} # task name, one of ['ok', 'aok_val', 'aok_test'], default 'ok'
 VERSION=${VERSION:-"prompt_okvqa"} # version name, default 'prompt_for_$TASK'
-EXAMPLES_PATH=${EXAMPLES_PATH:-"/root/workspace/BEiT3/24s-VQA-MLLM/assets/examples_okvqa_beit3.json"} # path to the examples, default is the result from our experiments
-CANDIDATES_PATH=${CANDIDATES_PATH:-"/root/workspace/BEiT3/24s-VQA-MLLM/assets/candidates_okvqa_beit3.json"} # path to the candidates, default is the result from our experiments
+EXAMPLES_PATH=${EXAMPLES_PATH:-"/root/workspace/24s-VQA-MLLM/BEiT3/24s-VQA-MLLM/assets/examples_okvqa_beit3.json"} # path to the examples, default is the result from our experiments
+CANDIDATES_PATH=${CANDIDATES_PATH:-"/root/datasets/okvqa/data/assets/candidates_okvqa_beit.json"} # path to the candidates, default is the result from our experiments
 CAPTIONS_PATH=${CAPTIONS_PATH:-"/root/datasets/okvqa/data/assets/captions_okvqa.json"} # path to the captions, default is the result from our experiments
 # EXAMPLES_PATH=${EXAMPLES_PATH:-"/content/drive/MyDrive/24s-deep-daiv/24s-VQA-MLLM/assets/answer_aware_examples_okvqa.json"} # path to the examples, default is the result from our experiments
 # CANDIDATES_PATH=${CANDIDATES_PATH:-"/content/drive/MyDrive/24s-deep-daiv/24s-VQA-MLLM/assets/candidates_okvqa.json"} # path to the candidates, default is the result from our experiments
@@ -42,7 +42,8 @@ CAPTIONS_PATH=${CAPTIONS_PATH:-"/root/datasets/okvqa/data/assets/captions_okvqa.
 # OPENAI_KEY=${OPENAI_KEY:-""} # path to the captions
 
 # CUDA_VISIBLE_DEVICES=$GPU \
-export CUDA_VISIBLE_DEVICES=$GPU
+#export CUDA_VISIBLE_DEVICES=$GPU
+GPU=${GPU:-3} # GPU id(s) you want to use, default '0'
 
 python main.py \
     --task $TASK --run_mode prompt \

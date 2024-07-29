@@ -11,7 +11,7 @@ class PATH:
         self.LOG_ROOT = 'outputs/logs/'
         self.CKPT_ROOT = 'outputs/ckpts/'
         self.RESULTS_ROOT = 'outputs/results/'
-        self.DATASET_ROOT = '/root/workspace/24s-VQA-MLLM/dataset/a-okvqa/'
+        self.DATASET_ROOT = '/root/datasets/okvqa/data/'
         # self.DATASET_ROOT = '/content/drive/MyDrive/24s-deep-daiv/ok-vqa/'
         self.ASSETS_ROOT = 'assets/'
 
