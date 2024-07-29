@@ -38,10 +38,10 @@ class Runner:
         # openai.api_key = __C.OPENAI_KEY
 
         # instructBLIP loading 
-        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.device = torch.device('cuda' if torch.cuda.is_available() else "cpu")
         print(f"Using device: {self.device}")
         self.processor = InstructBlipProcessor.from_pretrained("Salesforce/instructblip-flan-t5-xl")
-        self.model = InstructBlipForConditionalGeneration.from_pretrained("Salesforce/instructblip-flan-t5-xl", load_in_4bit=False)
+        self.model = InstructBlipForConditionalGeneration.from_pretrained("Salesforce/instructblip-flan-t5-xl", load_in_4bit=False).to(self.device)
 
     def instructblip_infer(self, image_path, prompt_text, max_retries=3):
         retry_count = 0

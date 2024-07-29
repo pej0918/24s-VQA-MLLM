@@ -42,8 +42,8 @@ CAPTIONS_PATH=${CAPTIONS_PATH:-"/root/datasets/okvqa/data/assets/captions_okvqa.
 # OPENAI_KEY=${OPENAI_KEY:-""} # path to the captions
 
 # CUDA_VISIBLE_DEVICES=$GPU \
-#export CUDA_VISIBLE_DEVICES=$GPU
-GPU=${GPU:-3} # GPU id(s) you want to use, default '0'
+
+CUDA_VISIBLE_DEVICES=$GPU \
 
 python main.py \
     --task $TASK --run_mode prompt \
