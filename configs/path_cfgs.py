@@ -15,16 +15,15 @@ class PATH:
         # self.DATASET_ROOT = '/content/drive/MyDrive/24s-deep-daiv/ok-vqa/'
         self.ASSETS_ROOT = 'assets/'
 
-
         self.IMAGE_DIR = {
-            'train2014': self.DATASET_ROOT + 'coco/train2017/',
-            'val2014': self.DATASET_ROOT + 'coco/val2017/',
+            'train2014': self.DATASET_ROOT + 'train2014/',
+            'val2014': self.DATASET_ROOT + 'val2014/',
             # 'train2014': self.DATASET_ROOT + 'train2014_vqa/',
             # 'val2014': self.DATASET_ROOT + 'val2014_vqa/',
             # 'test2015': self.DATASET_ROOT + 'coco2015/test2015/',
-            'train2017': self.DATASET_ROOT + 'coco2017/train2017/',
-            'val2017': self.DATASET_ROOT + 'coco2017/val2017/',
-            'test2017': self.DATASET_ROOT + 'coco2017/test2017/',
+            #'train2017': self.DATASET_ROOT + 'coco2017/train2017/',
+            #'val2017': self.DATASET_ROOT + 'coco2017/val2017/',
+            #'test2017': self.DATASET_ROOT + 'coco2017/test2017/',
         }
 
         self.FEATS_DIR = {
