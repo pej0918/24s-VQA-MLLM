@@ -66,8 +66,8 @@ We propose a model that enhances Q-Former’s performance by integrating the Mul
 
 </details>
 
-Visual Question Answering (VQA) involves generating accurate answers by reasoning over both textual (questions) and visual (images) data. While Q-Former effectively uses Cross-Attention for learning question-image interactions, it struggles with modeling complex relationships due to its single-layer attention mechanism. 
-To address these limitations, we propose a new architecture combining Q-Former with the Multimodal Co-Attention Network (MCAN), a multi-layer attention mechanism that captures deeper and more complex interactions between questions and images. Additionally, we introduce Question-Aware Prompts during fine-tuning, providing richer contextual information to further enhance the model’s performance on VQA tasks.
+**Visual Question Answering (VQA)** involves generating accurate answers by reasoning over both textual (questions) and visual (images) data. While **Q-Former** effectively uses Cross-Attention for learning question-image interactions, it struggles with modeling complex relationships due to its single-layer attention mechanism. 
+To address these limitations, we propose a new architecture combining Q-Former with the **Multimodal Co-Attention Network (MCAN)**, a multi-layer attention mechanism that captures deeper and more complex interactions between questions and images. Additionally, we introduce **Question-Aware Prompts** during fine-tuning, providing richer contextual information to further enhance the model’s performance on VQA tasks.
 
 ## Methodology
 
@@ -87,11 +87,9 @@ This integration enables the model to extract high-level semantic relationships 
 
 ![image](imgs/model_finetuning.png)
 
-During fine-tuning, we introduce Question-Aware Prompts to further enhance the model’s performance. These prompts provide additional context about the question, such as background knowledge and potential answer candidates. 
+During fine-tuning, we introduce **Question-Aware Prompts** to further enhance the model’s performance. These prompts provide additional context about the question, such as background knowledge and potential answer candidates. 
 
-By incorporating these prompts, the model can better interpret the question's intent, allowing for deeper reasoning and more accurate answers. This approach is especially beneficial for complex questions, where the added context enables the model to generate more informed and precise responses.
-
-Thus, The combination of MCAN’s multi-layered attention mechanism and the use of Question-Aware Prompts during fine-tuning significantly improves the model’s ability to handle challenging VQA tasks.
+By incorporating these prompts, the model can better interpret the question's intent, allowing for deeper reasoning and more accurate answers. This approach is especially beneficial for complex questions, where the added context enables the model to generate more informed and precise responses. The combination of MCAN’s multi-layered attention mechanism and the use of Question-Aware Prompts during fine-tuning significantly improves the model’s ability to handle challenging VQA tasks.
 
 ## Results
 
