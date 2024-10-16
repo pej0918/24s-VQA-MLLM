@@ -1,6 +1,6 @@
-# Multimodal Learning with Q-Former and MCAN for Visual Question Answering
+# Enhancing Q-Former for Visual Question Answering with Multi-layer Co-Attention and Question-Aware Prompts
 
-We propose a model that enhances Q-Former’s performance by integrating the Multimodal Co-Attention Network (MCAN) and introducing a Question-Aware Prompt during fine-tuning to improve Visual Question Answering (VQA) tasks.
+We propose a model that enhances Q-Former’s performance by integrating the Modular Co-Attention Network (MCAN) and introducing a Question-Aware Prompt during fine-tuning to improve Visual Question Answering (VQA) tasks.
 
 ## Introduction
 
@@ -67,13 +67,13 @@ We propose a model that enhances Q-Former’s performance by integrating the Mul
 </details>
 
 **Visual Question Answering (VQA)** involves generating accurate answers by reasoning over both textual (questions) and visual (images) data. While **Q-Former** effectively uses Cross-Attention for learning question-image interactions, it struggles with modeling complex relationships due to its single-layer attention mechanism. 
-To address these limitations, we propose a new architecture combining Q-Former with the **Multimodal Co-Attention Network (MCAN)**, a multi-layer attention mechanism that captures deeper and more complex interactions between questions and images. Additionally, we introduce **Question-Aware Prompts** during fine-tuning, providing richer contextual information to further enhance the model’s performance on VQA tasks.
+To address these limitations, we propose a new architecture combining Q-Former with the **Modular Co-Attention Network (MCAN)**, a multi-layer attention mechanism that captures deeper and more complex interactions between questions and images. Additionally, we introduce **Question-Aware Prompts** during fine-tuning, providing richer contextual information to further enhance the model’s performance on VQA tasks.
 
 ## Methodology
 
 ![image](imgs/model_Architecture_train.png)
 
-The proposed model enhances **Q-Former**'s ability to model interactions between the question and the image by integrating **Multimodal Co-Attention Network (MCAN)** and leveraging **Question-Aware Prompts** during fine-tuning to refine reasoning for complex VQA tasks.
+The proposed model enhances **Q-Former**'s ability to model interactions between the question and the image by integrating **Modular Co-Attention Network (MCAN)** and leveraging **Question-Aware Prompts** during fine-tuning to refine reasoning for complex VQA tasks.
 
 ### Q-Former and MCAN Integration
 
