@@ -1,6 +1,6 @@
 # Enhancing Q-Former for Visual Question Answering with Multi-layer Co-Attention and Question-Aware Prompts
 
-We propose a model that enhances Q-Former’s performance by integrating the Modular Co-Attention Network (MCAN) and introducing a Question-Aware Prompt during fine-tuning to improve Visual Question Answering (VQA) tasks.
+We propose a model that enhances Q-Former’s performance by **integrating the Modular Co-Attention Network (MCAN)** and **introducing a Question-Aware Prompt** during fine-tuning to improve Visual Question Answering (VQA) tasks.
 
 ## Introduction
 
