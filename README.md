@@ -1,7 +1,3 @@
-Here’s the **GitHub README** version, streamlined as per your request:
-
----
-
 # Enhancing Q-Former for Visual Question Answering with Multi-layer Co-Attention and Question-Aware Prompts
 
 We propose a model that enhances Q-Former’s performance by integrating the **Modular Co-Attention Network (MCAN)** and introducing a **Question-Aware Prompt** during fine-tuning, improving Visual Question Answering (VQA) tasks.
