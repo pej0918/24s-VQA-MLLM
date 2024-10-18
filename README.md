@@ -104,4 +104,5 @@ We evaluated our model on standard VQA datasets such as **OK-VQA** and **AOK-VQA
 ### Results Analysis
 The results demonstrate that integrating **MCAN** and utilizing **Question-Aware Prompts** significantly improves performance on VQA tasks. Our model achieved a **6.1% increase in accuracy** compared to the baseline (Q-Former with only questions). This improvement highlights the effectiveness of **Question-Aware Prompts**, which provide valuable context, helping the model better understand and reason about the question. Additionally, **MCAN**’s multi-layered attention mechanism outperforms the single-layer **Q-Former**, effectively capturing complex interactions between the question and image, and leading to more accurate answers.
 
+## Conclusion
 In conclusion, the results validate that combining **MCAN**'s deeper attention mechanisms with **Question-Aware Prompts** leads to more sophisticated reasoning and higher accuracy, making our model better suited for tackling challenging VQA problems.
